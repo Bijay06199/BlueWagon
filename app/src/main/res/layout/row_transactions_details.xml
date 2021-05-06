@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cVDataLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:id="@+id/lLDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_3sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tVDueDays"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/dueDate"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iVRemainder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/remainder"
+                    android:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/iVShare"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/share"
+                    android:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/iVSms"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/sms"
+                    android:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/iVExport"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/import_export"
+                    android:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tVBillNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/billNumber"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tVDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/dateHint1"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tVTransactionType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/transaction"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tVBillAmount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/amount"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tVPartyName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/party"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tVName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/name"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--    //old one hai-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lLDataLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="@dimen/_3sdp"-->
+    <!--        android:visibility="gone">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_35sdp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_3sdp">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="240dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:orientation="horizontal">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/tVDueDays"-->
+    <!--                    android:layout_width="200dp"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="@string/dueDate"-->
+    <!--                    android:textColor="@color/lightBlack"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iVRemainder"-->
+    <!--                    android:layout_width="@dimen/_30sdp"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:src="@drawable/remainder"-->
+    <!--                    android:tint="@color/colorPrimary" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--            <View-->
+    <!--                android:layout_width="1dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/grey" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVTransactionType"-->
+    <!--                android:layout_width="@dimen/_300sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_vertical"-->
+    <!--                android:paddingStart="@dimen/_5sdp"-->
+    <!--                android:paddingLeft="@dimen/_5sdp"-->
+    <!--                android:text="@string/transaction"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="1dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/grey" />-->
+
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:orientation="horizontal">-->
+
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iVShare"-->
+    <!--                    android:layout_width="@dimen/_30sdp"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginStart="@dimen/_10sdp"-->
+    <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+    <!--                    android:src="@drawable/share"-->
+    <!--                    android:tint="@color/colorPrimary" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iVSms"-->
+    <!--                    android:layout_width="@dimen/_30sdp"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginStart="@dimen/_15sdp"-->
+    <!--                    android:layout_marginLeft="@dimen/_15sdp"-->
+    <!--                    android:src="@drawable/sms"-->
+    <!--                    android:tint="@color/colorPrimary" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iVExport"-->
+    <!--                    android:layout_width="@dimen/_30sdp"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginStart="@dimen/_15sdp"-->
+    <!--                    android:layout_marginLeft="@dimen/_15sdp"-->
+    <!--                    android:src="@drawable/import_export"-->
+    <!--                    android:tint="@color/colorPrimary" />-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVDebitAmount"-->
+    <!--                android:layout_width="120dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_vertical"-->
+    <!--                android:paddingStart="@dimen/_5sdp"-->
+    <!--                android:paddingLeft="@dimen/_5sdp"-->
+    <!--                android:text="@string/total"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="560dp"-->
+    <!--            android:layout_height="@dimen/_30sdp"-->
+    <!--            android:layout_marginTop="@dimen/_3sdp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_3sdp">-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVDate"-->
+    <!--                android:layout_width="120dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/dateHint1"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="1dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/grey" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVBillNumber"-->
+    <!--                android:layout_width="120dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_vertical"-->
+    <!--                android:paddingStart="@dimen/_5sdp"-->
+    <!--                android:paddingLeft="@dimen/_5sdp"-->
+    <!--                android:text="@string/billNumber"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="1dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/grey" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVPartyName"-->
+    <!--                android:layout_width="@dimen/_200sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_vertical"-->
+    <!--                android:paddingStart="@dimen/_5sdp"-->
+    <!--                android:paddingLeft="@dimen/_5sdp"-->
+    <!--                android:text="@string/party"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="1dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/grey" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVName"-->
+    <!--                android:layout_width="@dimen/_150sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_vertical"-->
+    <!--                android:paddingStart="@dimen/_5sdp"-->
+    <!--                android:paddingLeft="@dimen/_5sdp"-->
+    <!--                android:text="@string/name"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="1dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/grey" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tVBillAmount"-->
+    <!--                android:layout_width="@dimen/_150sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_vertical"-->
+    <!--                android:paddingStart="@dimen/_5sdp"-->
+    <!--                android:paddingLeft="@dimen/_5sdp"-->
+    <!--                android:text="@string/amount"-->
+    <!--                android:textColor="@color/lightBlack"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+</androidx.cardview.widget.CardView>

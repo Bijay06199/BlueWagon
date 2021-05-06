@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bluewagon">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".utils.BlueWagon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BlueWagon"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:name">
+        <activity android:name=".ui.main.track.TrackingPagerReceiverActivity"></activity>
+        <activity android:name=".ui.main.landingPage.contact.ContactActivity" />
+        <activity android:name=".ui.main.MapsUserActivity" />
+        <activity
+            android:name=".ui.main.track.TrackingPageActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.main.landingPage.LandingPageActivity"
+            android:launchMode="singleTask" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".ui.main.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.auth.login.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.SalesInvoiceActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.SalesChallanActivity" />
+        <activity android:name=".ecalculo.activities.transactions.view.SalesChallanViewActivity" />
+        <activity android:name=".ecalculo.activities.transactions.view.SalesOrderViewActivity" />
+        <activity android:name=".ecalculo.activities.reports.PostdatedChequeReportActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.PaymentDoubleEntryActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.ReceiptDoubleEntryActivity" />
+        <activity android:name=".ecalculo.activities.creation.ItemSubGroupActivity" />
+        <activity android:name=".ecalculo.activities.creation.AccountGroupActivity" />
+        <activity android:name=".ecalculo.activities.reports.CashBookReportActivity" />
+        <activity android:name=".ecalculo.activities.reports.ProfitAndLossActivity" />
+        <activity android:name=".ecalculo.activities.reports.BalanceSheetActivity" />
+        <activity android:name=".ecalculo.activities.reports.ItemClosingBalanceActivity" />
+        <activity android:name=".ecalculo.activities.reports.ItemSummaryActivity" />
+        <activity android:name=".ecalculo.activities.reports.ItemStatementActivity" />
+        <activity android:name=".ecalculo.activities.reports.BankBalanceActivity" />
+        <activity android:name=".ecalculo.activities.reports.BankStatementActivity" />
+        <activity android:name=".ecalculo.activities.reports.AccountStatementLedgerActivity" />
+        <activity android:name=".ecalculo.activities.reports.CustomerTransactionSummaryActivity" />
+        <activity android:name=".ecalculo.activities.reports.SupplierTransactionSummaryActivity" />
+        <activity android:name=".ecalculo.activities.reports.PartyAgedReceivableActivity" />
+        <activity android:name=".ecalculo.activities.reports.PartyAgedPayableActivity" />
+        <activity android:name=".ecalculo.activities.reports.PartyOutstandingReceivableActivity" />
+        <activity android:name=".ecalculo.activities.reports.PartyOutstandingPayableActivity" />
+        <activity android:name=".ecalculo.activities.reports.PartyStatementActivity" />
+        <activity android:name=".ecalculo.activities.transactions.view.PaymentEntryViewActivity" />
+        <activity android:name=".ecalculo.activities.transactions.view.JournalViewActivity" />
+        <activity android:name=".ecalculo.activities.transactions.view.InvoiceViewActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.BankTransferActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.CashDepositActivity" />
+        <activity android:name=".ecalculo.activities.creation.AccountSubGroupActivity" />
+        <activity android:name=".ecalculo.activities.creation.ItemCategoryActivity" />
+        <activity android:name=".ecalculo.activities.creation.CreateWarehouseGroupActivity" />
+        <activity android:name=".ecalculo.activities.creation.CreateWarehouseActivity" />
+        <activity android:name=".ecalculo.activities.creation.CreateBankActivity" />
+        <activity android:name=".ecalculo.activities.creation.CreateExpensesActivity" />
+        <activity android:name=".ecalculo.activities.creation.CreateIncomeActivity" />
+        <activity android:name=".ecalculo.activities.creation.CreateAccountActivity" />
+        <activity android:name=".ecalculo.activities.creation.AddSupplierActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.CreditNoteWOItems" />
+        <activity android:name=".ecalculo.activities.transactions.entry.DebitNoteWOItems" />
+        <activity android:name=".ecalculo.activities.transactions.entry.SalesWOItemsActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.PurchaseWOItemsActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.CashWithdrawlActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.ReceiptEntryActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.PurchaseReturnByBillActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.PurchaseReturnActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.PaymentEntryActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.EntryActivity" />
+        <activity android:name=".ecalculo.activities.creation.AddMeasurementUnitActivity" />
+        <activity android:name=".ecalculo.activities.creation.AddTaxTypeActivity" />
+        <activity android:name=".ecalculo.activities.creation.AddCustomerActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.SalesReturnActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.SalesReturnByBillActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.PurchaseInvoiceActivity" />
+        <activity android:name=".ecalculo.activities.creation.AddItemsActivity" />
+        <activity android:name=".ecalculo.activities.creation.AddItemServiceActivity" />
+        <activity android:name=".ecalculo.activities.transactions.entry.SalesOrderActivity" />
+        <activity android:name=".ecalculo.activities.startup.ResetPasswordActivity" />
+        <activity android:name=".ecalculo.activities.startup.DashboardActivity" />
+        <activity android:name=".ecalculo.activities.startup.LoginSplashActivity" />
+    </application>
+
+</manifest>

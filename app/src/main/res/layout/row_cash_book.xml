@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lLDataLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_40sdp"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVNepaliDate"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVEngDate"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVVoucherType"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVVoucherNumber"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+
+    <TextView
+        android:id="@+id/tVParticular"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+
+    <TextView
+        android:id="@+id/tVCashIn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:textColor="@color/debitColor"
+        tools:ignore="RtlCompat,RtlSymmetry" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVCashOut"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:textColor="@color/creditColor"
+        tools:ignore="RtlCompat,RtlSymmetry" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVBalance"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat,RtlSymmetry" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tVDrCr"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat,RtlSymmetry" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/iVViewVoucher"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_eye_24"
+        android:tint="@color/colorPrimary"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider"
+        android:visibility="gone"/>
+
+</LinearLayout>
+

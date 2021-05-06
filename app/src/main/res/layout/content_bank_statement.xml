@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostWhite"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_bank_statement">
+
+    <LinearLayout
+        android:id="@+id/lLDateSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/viewSelectItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectedItem"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tVAccountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/dash"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <LinearLayout
+                android:id="@+id/lLDateFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tVDateFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateHint"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/darkGray" />
+
+            <LinearLayout
+                android:id="@+id/lLDateTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tVDateTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateHint"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonSearch"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bg_button"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_below="@id/lLDateSelection"
+        android:background="@color/colorPrimary"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tVNepaliDate"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/nepaliDate"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVEngDate"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/dateHint1"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVVoucherType"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/voucherType"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+
+            <TextView
+                android:id="@+id/tVVoucherNumber"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/voucherNo"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVParticular"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/particular"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVChequeDate"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/chequeDate"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+
+            <TextView
+                android:id="@+id/tVChequeNumber"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/chequeNo"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVDeposited"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/deposited"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVWithdraw"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/withdraw"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVBalance"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/balance"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tVDrCr"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/drCr"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/lLNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        tools:ignore="UseCompoundDrawables"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/no_data"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/selectAccount"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"
+            tools:ignore="PrivateResource" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rVBankStatement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cVBottomButtons"
+        android:layout_below="@+id/scrollMain"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cVBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+        <TextView
+            android:id="@+id/tVCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

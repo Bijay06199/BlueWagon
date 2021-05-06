@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#08205C</color>
+    <color name="colorPrimary">#08205C</color>
+    <color name="colorPrimaryLight">#08205C</color>
+    <color name="colorAccent">#08205C</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fade_white">#97FFFFFF</color>
+
+
+
+    <color name="success">#139B22</color>
+    <color name="danger">#57040B</color>
+    <color name="info">#008577</color>
+    <color name="warning">#FF6D00</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="fade_color_primary">#A808205C</color>
+    <color name="normal_text_color">#4A4A4A</color>
+
+
+    <color name="textBlack">#5c5c5c</color>
+    <color name="almostWhite">#f4f4f4</color>
+
+
+    <color name="debitColor">#006f1b</color>
+    <color name="creditColor">#cc0000</color>
+
+
+
+
+
+
+    <color name="grey">#535151</color>
+    <color name="fade_line_color">#F0F0F0</color>
+    <color name="fade_red">#CF3838</color>
+    <color name="gray">#ececec</color>
+    <color name="green">#00C853</color>
+    <color name="transparent">#00000000</color>
+
+    <!--greys-->
+    <color name="lightGray">#f1f1f1</color>
+    <color name="lightGray2">#ddd</color>
+    <color name="grey2">#bfbfbf</color>
+    <color name="googleGrey">#7b7b7b</color>
+    <color name="darkGray">#bdbdbd</color>
+    <color name="pressed_back">#4BFFFFFF</color>
+
+    <color name="light_text_color">#72000000</color>
+
+
+    <color name="lightBlack">#4c4c4c</color>
+
+
+</resources>

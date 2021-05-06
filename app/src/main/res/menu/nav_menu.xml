@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Communicate"/>
+
+<!--    <item-->
+<!--        android:id="@+id/clients"-->
+<!--        android:title="Clients" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/suppliers"-->
+<!--        android:title="Suppliers" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/inventory"-->
+<!--        android:title="Inventory" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/ficalYear"-->
+<!--        android:icon="@drawable/calendar_icon"-->
+<!--        android:title="Switch Fiscal Year" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/switchOffice"-->
+<!--        android:icon="@drawable/switchorg"-->
+<!--        android:title="Switch Office" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/logout"-->
+<!--        android:icon="@drawable/logout"-->
+<!--        android:title="Logout" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/complaint"-->
+        <!--android:icon="@drawable/complaint_icon"-->
+        <!--android:title="Feedback/Complaint" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/notificationHistory"-->
+        <!--android:icon="@drawable/notify_icon"-->
+        <!--android:title="Notification History" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/aboutUs"-->
+        <!--android:icon="@drawable/about"-->
+        <!--android:title="About Us" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/contact"-->
+        <!--android:icon="@drawable/contact_icon"-->
+        <!--android:title="Contact Us" />-->
+
+
+</menu>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/lLDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tVBillDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:gravity="center"
+                    android:text="@string/dateHint"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tVBillNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:gravity="center"
+                    android:text="@string/billNumber"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rVItems"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="@dimen/_3sdp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:gravity="end|center_vertical"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/paidBy"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:padding="@dimen/_2sdp"/>
+
+            <TextView
+                android:id="@+id/tVPaidBy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:gravity="end|center_vertical"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/total"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:padding="@dimen/_2sdp"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tVTotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/zero"
+                android:textColor="@color/lightBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_40sdp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:padding="@dimen/_3sdp">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tVBillDate"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/dateHint"-->
+        <!--                android:textColor="@color/lightBlack"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@color/grey"/>-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tVParty"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:text="@string/party"-->
+        <!--                android:textColor="@color/lightBlack"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:paddingLeft="@dimen/_5sdp"-->
+        <!--                android:paddingStart="@dimen/_5sdp"/>-->
+
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@color/grey"/>-->
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tVTotal"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/total"-->
+        <!--                android:textColor="@color/lightBlack"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_40sdp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:padding="@dimen/_3sdp">-->
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tVBillNumber"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/billNumber"-->
+        <!--                android:textColor="@color/lightBlack"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@color/grey"/>-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tVName"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:text="@string/name"-->
+        <!--                android:textColor="@color/lightBlack"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:paddingLeft="@dimen/_5sdp"-->
+        <!--                android:paddingStart="@dimen/_5sdp" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@color/grey"/>-->
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tVAmount"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/total"-->
+        <!--                android:textColor="@color/lightBlack"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tVNarration"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_40sdp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:text="@string/narration"-->
+        <!--            android:textColor="@color/lightBlack"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:paddingLeft="@dimen/_5sdp"-->
+        <!--            android:paddingStart="@dimen/_5sdp"/>-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

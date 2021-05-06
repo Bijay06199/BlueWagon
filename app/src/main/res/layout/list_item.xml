@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rLList"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:background="@color/colorPrimaryLight">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="245dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_60sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textSize="15sp"
+        android:paddingStart="@dimen/_60sdp"
+        android:text="@string/expenses"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/iVUp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_toEndOf="@+id/lblListItem"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/lblListItem"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:tint="@color/white"
+        android:visibility="visible" />
+
+</RelativeLayout>

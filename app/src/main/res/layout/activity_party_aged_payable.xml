@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tVTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/iVBackArrow"
+                android:layout_toRightOf="@+id/iVBackArrow"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/lLDateSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_below="@+id/appBar"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <LinearLayout
+                android:id="@+id/lLAsOfDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asOf"
+                    android:textStyle="bold"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tVAsOfDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateHint"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonSearch"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bg_button"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollMain"
+        android:layout_below="@+id/lLDateSelection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:scrollbars="none"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tVSerialNumber"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/sn"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVPartyName"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/party"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVAmount"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/closingAmount"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVLessThan30"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/lessThan30"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVLessThan60"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/lessThan60"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVLessThan90"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/lessThan90"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVLessThan120"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/lessThan120"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVLessThan150"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/lessThan150"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tVMoreThan150"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="@string/moreThan150"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/lLNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        tools:ignore="UseCompoundDrawables"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/no_data"
+            app:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="No data available"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rVPartyAgedPayable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cVBottomButtons"
+        android:layout_below="@+id/scrollMain"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cVBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+        <TextView
+            android:id="@+id/tVCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

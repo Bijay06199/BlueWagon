@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cVDataLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tv_sno"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/s_no"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/order_no"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_customer"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/customer"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/address"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/contact"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_delivery_amt"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/delivery_amt"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_bill_amt"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="@string/bill_amt"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+<!--        <View-->
+<!--            android:layout_width="@dimen/_1sdp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white" />-->
+
+<!--        <com.tiper.MaterialSpinner-->
+<!--            android:layout_width="150dp"-->
+<!--            style="@style/AppTheme.Widget.Design.TextInputLayout"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:hintTextColor="@color/normal_text_color"-->
+<!--            android:src="@drawable/ic_selector_drawable"-->
+<!--            android:background="@color/white"-->
+<!--            android:focusableInTouchMode="true"-->
+<!--            android:id="@+id/tv_payment"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView69"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView69"-->
+<!--            />-->
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.tiper.MaterialSpinner
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            style="@style/AppTheme.Widget.Design.TextInputLayout"
+            app:hintTextColor="@color/normal_text_color"
+            android:src="@drawable/ic_selector_drawable"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:id="@+id/tv_order_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView69"
+            app:layout_constraintTop_toBottomOf="@+id/textView69"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_rider_remarks"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:text="@string/add_remarks_here"
+            />
+
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_remarks"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
